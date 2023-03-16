@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		797AF09429C3DA4D00C98074 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797AF09329C3DA4D00C98074 /* Welcome.swift */; };
+		797AF09629C3DA5700C98074 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797AF09529C3DA5700C98074 /* Login.swift */; };
+		797AF09929C3DADB00C98074 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797AF09829C3DADB00C98074 /* HomePage.swift */; };
+		797AF09B29C3DAED00C98074 /* Emergency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797AF09A29C3DAED00C98074 /* Emergency.swift */; };
+		797AF09D29C3DAFC00C98074 /* CWRU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797AF09C29C3DAFC00C98074 /* CWRU.swift */; };
+		797AF09F29C3DB0300C98074 /* Cleveland.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797AF09E29C3DB0300C98074 /* Cleveland.swift */; };
+		797AF0A129C3DB1700C98074 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797AF0A029C3DB1700C98074 /* Info.swift */; };
+		797AF0A329C3DB2900C98074 /* Forum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797AF0A229C3DB2900C98074 /* Forum.swift */; };
 		79B9583529C0D5EB0020520E /* Open_Mind_PrototypeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B9583429C0D5EB0020520E /* Open_Mind_PrototypeApp.swift */; };
 		79B9583729C0D5EB0020520E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B9583629C0D5EB0020520E /* ContentView.swift */; };
 		79B9583929C0D5ED0020520E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79B9583829C0D5ED0020520E /* Assets.xcassets */; };
@@ -14,6 +22,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		797AF09329C3DA4D00C98074 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
+		797AF09529C3DA5700C98074 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		797AF09829C3DADB00C98074 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		797AF09A29C3DAED00C98074 /* Emergency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emergency.swift; sourceTree = "<group>"; };
+		797AF09C29C3DAFC00C98074 /* CWRU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWRU.swift; sourceTree = "<group>"; };
+		797AF09E29C3DB0300C98074 /* Cleveland.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cleveland.swift; sourceTree = "<group>"; };
+		797AF0A029C3DB1700C98074 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		797AF0A229C3DB2900C98074 /* Forum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forum.swift; sourceTree = "<group>"; };
 		79B9583129C0D5EB0020520E /* Open Mind Prototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Open Mind Prototype.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79B9583429C0D5EB0020520E /* Open_Mind_PrototypeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Open_Mind_PrototypeApp.swift; sourceTree = "<group>"; };
 		79B9583629C0D5EB0020520E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +48,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		797AF08B29C3D93500C98074 /* Before Login */ = {
+			isa = PBXGroup;
+			children = (
+				797AF09329C3DA4D00C98074 /* Welcome.swift */,
+				797AF09529C3DA5700C98074 /* Login.swift */,
+			);
+			path = "Before Login";
+			sourceTree = "<group>";
+		};
+		797AF09729C3DAC800C98074 /* After Login */ = {
+			isa = PBXGroup;
+			children = (
+				797AF09829C3DADB00C98074 /* HomePage.swift */,
+				797AF09A29C3DAED00C98074 /* Emergency.swift */,
+				797AF09C29C3DAFC00C98074 /* CWRU.swift */,
+				797AF09E29C3DB0300C98074 /* Cleveland.swift */,
+				797AF0A029C3DB1700C98074 /* Info.swift */,
+				797AF0A229C3DB2900C98074 /* Forum.swift */,
+			);
+			path = "After Login";
+			sourceTree = "<group>";
+		};
 		79B9582829C0D5EB0020520E = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +89,8 @@
 		79B9583329C0D5EB0020520E /* Open Mind Prototype */ = {
 			isa = PBXGroup;
 			children = (
+				797AF09729C3DAC800C98074 /* After Login */,
+				797AF08B29C3D93500C98074 /* Before Login */,
 				79B9583429C0D5EB0020520E /* Open_Mind_PrototypeApp.swift */,
 				79B9583629C0D5EB0020520E /* ContentView.swift */,
 				79B9583829C0D5ED0020520E /* Assets.xcassets */,
@@ -137,8 +177,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				797AF09F29C3DB0300C98074 /* Cleveland.swift in Sources */,
+				797AF09929C3DADB00C98074 /* HomePage.swift in Sources */,
+				797AF09B29C3DAED00C98074 /* Emergency.swift in Sources */,
+				797AF0A129C3DB1700C98074 /* Info.swift in Sources */,
 				79B9583729C0D5EB0020520E /* ContentView.swift in Sources */,
+				797AF09429C3DA4D00C98074 /* Welcome.swift in Sources */,
+				797AF09D29C3DAFC00C98074 /* CWRU.swift in Sources */,
 				79B9583529C0D5EB0020520E /* Open_Mind_PrototypeApp.swift in Sources */,
+				797AF09629C3DA5700C98074 /* Login.swift in Sources */,
+				797AF0A329C3DB2900C98074 /* Forum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
