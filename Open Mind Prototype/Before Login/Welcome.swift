@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+import GoogleSignIn
 
 struct Welcome: View {
+    @StateObject private var vm = SignUpVM()
     var body: some View {
         NavigationView {
             /*
@@ -17,40 +19,44 @@ struct Welcome: View {
              */
             ZStack {
                 //add a background
-                Color(UIColor(red: 0.04, green: 0.19, blue: 0.31, alpha: 1.00))
+                Color(UIColor(red: 0.65, green: 0.82, blue: 0.94, alpha: 1.00))
                     .ignoresSafeArea()
                 
                 VStack {
                     //welcome message
                     VStack {
-                        Text("Welcome to Open Mind!")
-                        Text("This is a project created by Bhavya Krishna ('25) and Hannah Jackson ('24)")
+                        Image("Logo2")
+                            .resizable()
+                            .frame(width: 400, height: 400)
                     }
-                    .padding()
-                    .background(Rectangle()
-                        .foregroundColor(.white)
-                        .cornerRadius(20)
-                        .shadow(radius: 25))
-                    .padding()
+                    //.foregroundColor(.black)
                     
                     //log in function
                     VStack {
-                        NavigationLink("Click here to log in", destination: HomePage())
-                        //add a login feature with google here
+                        /*Button(action: {
+                            vm.signInWithGoogle()
+                        }) {
+                            Text("Click here to log in")
+                        }*/
+                        
+                        VStack{
+                         NavigationLink("Click here to log in", destination: TabBar())
+                         }
+                        .padding()
+                        .background(Rectangle()
+                            .foregroundColor(.white)
+                            .cornerRadius(20)
+                            .shadow(radius: 25))
                     }
-                    .padding()
-                    .background(Rectangle()
-                        .foregroundColor(.white)
-                        .cornerRadius(20)
-                        .shadow(radius: 25))
                 }
             }
         }
     }
-}
-
-struct Welcome_Previews: PreviewProvider {
-    static var previews: some View {
-        Welcome()
+    
+    
+    struct Welcome_Previews: PreviewProvider {
+        static var previews: some View {
+            Welcome()
+        }
     }
 }
